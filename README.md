@@ -1,20 +1,29 @@
-# Student Task Manager
+# 📚 Student Task Manager
 
-A simple task management web app built using HTML, CSS and JavaScript.
+A modern, responsive Student Task Manager built using HTML, CSS, and JavaScript.
 
-## 🚀 Features
-- Add tasks
-- Delete tasks
-- Clean UI
-- Responsive design
-
-## 🛠 Tech Stack
-- HTML
-- CSS
-- JavaScript
-
-## 🔗 Live Demo
+## 🚀 Live Demo
 https://mohammadsahil2.github.io/student-task-manager/
 
-## 👨‍💻 Author
-Mohammad Sahil
+## ✨ Features
+- Add new tasks
+- Delete tasks
+- Mark tasks as completed
+- Persistent storage using LocalStorage
+- Responsive modern UI
+- Clean and minimal design
+
+## 🛠 Tech Stack
+- HTML5
+- CSS3 (Glassmorphism UI)
+- Vanilla JavaScript
+- LocalStorage API
+
+## 📌 Author
+Mohammad Sahil  
+BCA Student | Frontend Developer  
+GitHub: https://github.com/Mohammadsahil2
+
+---
+
+This project demonstrates DOM manipulation, state management, and browser storage handling using JavaScript.
