@@ -1,20 +1,49 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>Student Task Manager</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Student Task Manager Pro</title>
+<link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-<div class="container">
-    <h1>📚 Student Task Manager</h1>
+<div class="app">
+    <header>
+        <h1>Student Task Manager Pro</h1>
+        <button id="themeToggle">Toggle Theme</button>
+    </header>
 
-    <div class="input-section">
-        <input type="text" id="taskInput" placeholder="Enter a new task...">
-        <button onclick="addTask()">Add</button>
-    </div>
+    <section class="controls">
+        <input type="text" id="taskInput" placeholder="Task title">
+        <select id="priority">
+            <option value="Low">Low</option>
+            <option value="Medium">Medium</option>
+            <option value="High">High</option>
+        </select>
+        <input type="date" id="dueDate">
+        <button id="addBtn">Add Task</button>
+    </section>
+
+    <section class="filters">
+        <input type="text" id="search" placeholder="Search tasks">
+        <select id="filterStatus">
+            <option value="All">All</option>
+            <option value="Completed">Completed</option>
+            <option value="Pending">Pending</option>
+        </select>
+        <select id="sortPriority">
+            <option value="None">Sort By Priority</option>
+            <option value="High">High First</option>
+            <option value="Low">Low First</option>
+        </select>
+    </section>
+
+    <section class="stats">
+        <p>Total: <span id="total">0</span></p>
+        <p>Completed: <span id="completed">0</span></p>
+        <p>Pending: <span id="pending">0</span></p>
+    </section>
 
     <ul id="taskList"></ul>
 </div>
