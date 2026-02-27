@@ -1,83 +1,69 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
 body {
-    font-family: 'Segoe UI', sans-serif;
-    background: linear-gradient(135deg, #141e30, #243b55);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    color: #fff;
-}
-
-.container {
-    background: rgba(255, 255, 255, 0.08);
-    padding: 30px;
-    border-radius: 15px;
-    width: 400px;
-    backdrop-filter: blur(10px);
-    box-shadow: 0 15px 30px rgba(0,0,0,0.3);
-}
-
-h1 {
-    text-align: center;
-    margin-bottom: 20px;
-}
-
-.input-section {
-    display: flex;
-    gap: 10px;
-}
-
-input {
-    flex: 1;
-    padding: 10px;
-    border-radius: 8px;
-    border: none;
-    outline: none;
-}
-
-button {
-    padding: 10px 15px;
-    border: none;
-    border-radius: 8px;
-    cursor: pointer;
-    background: #00c6ff;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #1e3c72, #2a5298);
     color: white;
-    font-weight: bold;
     transition: 0.3s;
 }
 
-button:hover {
-    background: #0072ff;
+.dark {
+    background: #121212;
 }
 
-ul {
-    list-style: none;
-    margin-top: 20px;
+.app {
+    max-width: 800px;
+    margin: auto;
+    padding: 20px;
 }
 
-li {
-    background: rgba(255,255,255,0.1);
-    padding: 10px;
-    margin-bottom: 10px;
-    border-radius: 8px;
+header {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
-li.completed {
+.controls, .filters {
+    display: flex;
+    gap: 10px;
+    margin: 15px 0;
+    flex-wrap: wrap;
+}
+
+input, select, button {
+    padding: 8px;
+    border-radius: 5px;
+    border: none;
+}
+
+button {
+    cursor: pointer;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+li {
+    background: rgba(255,255,255,0.1);
+    margin-bottom: 10px;
+    padding: 10px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.completed {
     text-decoration: line-through;
     opacity: 0.6;
 }
 
-.actions button {
-    margin-left: 5px;
-    padding: 5px 8px;
-    font-size: 12px;
+.priority-High { border-left: 5px solid red; }
+.priority-Medium { border-left: 5px solid orange; }
+.priority-Low { border-left: 5px solid green; }
+
+.stats {
+    display: flex;
+    gap: 20px;
 }
