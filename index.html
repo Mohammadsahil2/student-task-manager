@@ -1,20 +1,12 @@
-<!DOCTYPE html>
-<html>
-<head>
-    <title>Student Task Manager</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
+<h1>Student Task Manager</h1>
 
-    <div class="container">
-        <h1>Student Task Manager</h1>
+<div class="input-section">
+    <input type="text" id="taskInput" placeholder="Enter your task">
+    <button onclick="addTask()">Add Task</button>
+</div>
 
-        <input type="text" id="taskInput" placeholder="Enter your task">
-        <button onclick="addTask()">Add Task</button>
-
-        <ul id="taskList"></ul>
-    </div>
-
+<ul id="taskList"></ul>
 <script src="script.js"></script>
 </body>
+
 </html>
